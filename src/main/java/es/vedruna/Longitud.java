@@ -2,7 +2,7 @@ package es.vedruna;
 
 public class Longitud {
 
-    public int getWordLength(String word){
+    public static int getWordLength(String word){
         if (validador(word)) {
             return word.length();
         }
@@ -11,7 +11,7 @@ public class Longitud {
     }
 
 
-    public boolean validador(String word) {
+    public static boolean validador(String word) {
         if (word== null) {
             return false; // Manejo de caso nulo
         }
